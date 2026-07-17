@@ -1,0 +1,5 @@
+{:identity/id "did:web:suimin.etzhayyim.com"
+ :identity/actor "suimin"
+ :identity/canonical-document "manifest.edn"
+ :identity/external-did-document ".well-known/did.json"
+ :identity/canonical-format :edn}

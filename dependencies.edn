@@ -1,0 +1,14 @@
+{:dependencies
+ [{:dependency/id etzhayyim/root
+   :dependency/repository "https://github.com/etzhayyim/root"
+   :dependency/revision "a213f6ef3c341bf499bb66942ab44019459b5b99"
+   :dependency/paths ["20-actors/magatama/cells" "90-docs/adr"]
+   :dependency/purpose #{:cell-host :adr :governance}}
+  {:dependency/id com.etzhayyim/mitate
+   :dependency/repository "https://github.com/etzhayyim/com-etzhayyim-mitate"
+   :dependency/revision "5900536cdda2becb947fda4c67dea84365d2239d"
+   :dependency/purpose #{:diagnostic-routing}}
+  {:dependency/id com.etzhayyim/yakushi
+   :dependency/repository "https://github.com/etzhayyim/com-etzhayyim-yakushi"
+   :dependency/revision "5b2389671defc00ef8c7cfa522b9bc96b3ac192f"
+   :dependency/purpose #{:treatment-evidence-integration}}]}

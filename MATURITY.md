@@ -6,8 +6,8 @@ synthesis (does NOT diagnose / treat / book / sell).
 | Dimension | State |
 |---|---|
 | Lexicons | ✅ 7 under `com.etzhayyim.suimin.*` (sourceWhitelist / evidenceRecord / treatmentSynthesis / conditionProfile / referralPathway / silenSuiminReview / disclaimerText) |
-| Manifest | ✅ `manifest.jsonld` |
-| Tests | ✅ `methods/test_charter_gates.py` — **9 tests, green** (added 2026-06-16; previously ZERO tests anywhere) — pins G1/G2/G3/G4 schema invariants; `./run_tests.sh` |
+| Manifest | ✅ canonical `manifest.edn` |
+| Tests | ✅ **19 tests / 101 assertions, green** — charter, Murakumo adapter, and repository contracts; `bb -cp src:test run_tests.clj` |
 | Cells | ⛔ none yet (R1 — hazard/evidence ingest + synthesis cells, Murakumo-only) |
 | Methods | ⛔ no engine yet (R1 — evidence ingest + GRADE synthesis + disclaimer/referral gates) |
 

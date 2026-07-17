@@ -1,4 +1,4 @@
-# 20-actors/suimin — CLAUDE rules
+# com-etzhayyim-suimin — CLAUDE rules
 
 Tier-B per-domain leader actor for religious-corp first-party **sleep-disorder treatment-EVIDENCE
 research + synthesis** (NOT diagnosis, NOT treatment).
@@ -39,7 +39,7 @@ Every `evidenceRecord` / `treatmentSynthesis` claim MUST carry a `sourceClass` �
 `sourceWhitelist` AND a verifiable provenance id. A claim without whitelisted source + provenance is
 **not emittable** (architectural invariant). Whitelist additions require `silenSuiminReview` scope
 `source-whitelist-baseline` with Council Lv6+ ≥3 attestation. See
-`00-contracts/lexicons/com/etzhayyim/suimin/sourceWhitelist.json`.
+`lex/sourceWhitelist.edn`.
 
 ## Disclaimer-gate invariant (G3)
 
@@ -56,7 +56,7 @@ landscape + referral routing only. This is the constitutional identity (N1-N5) �
 ## Cell pattern (per ADR-2605192415 §B, mitate mirror)
 
 ```
-20-actors/magatama/cells/suimin_{cell_name}/
+orgs/etzhayyim/root/20-actors/magatama/cells/suimin_{cell_name}/
 ├── README.md     # input/output Lexicon + state schema
 ├── __init__.py   # one-line module marker
 └── cell.py       # multi-gate import-time RuntimeError until Council ratification
@@ -104,5 +104,5 @@ Do NOT skip phases. Each R transition is its own ADR.
 - [ADR-2605181100](../../90-docs/adr/2605181100-mst-encrypted-records-signal-keywrap.md) (XChaCha20 envelope — G7)
 - [ADR-2605231525](../../90-docs/adr/2605231525-no-server-key-religious-corp-architecture.md) (no-server-key — G13)
 - [ADR-2605215000](../../90-docs/adr/2605215000-etzhayyim-inference-murakumo-only-no-runpod.md) (Murakumo-only — G10)
-- [`20-actors/mitate/CLAUDE.md`](../mitate/CLAUDE.md) (mitate sibling rules)
-- [`20-actors/magatama/cells/README.md`](../magatama/cells/README.md) (sibling cell catalog)
+- [`com-etzhayyim-mitate/CLAUDE.md`](https://github.com/etzhayyim/com-etzhayyim-mitate/blob/main/CLAUDE.md) (mitate sibling rules)
+- [`orgs/etzhayyim/root/20-actors/magatama/cells/README.md`](https://github.com/etzhayyim/root/blob/a213f6ef3c341bf499bb66942ab44019459b5b99/20-actors/magatama/cells/README.md) (pinned root dependency's sibling cell catalog)
