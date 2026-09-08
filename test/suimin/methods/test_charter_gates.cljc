@@ -2,7 +2,7 @@
   "suimin — structural charter-gate conformance tests. Substrate-native Clojure (ADR-2606160842); 1:1 port of pruned test_charter_gates.py."
   (:require [clojure.test :refer [deftest is run-tests]]
             [clojure.set :as set]
-            [clojure.string :as str]
+            [kotoba.lang.text :as str]
             [clojure.edn :as edn]))
 
 (def ^:private here (.getParentFile (java.io.File. ^String *file*)))
@@ -84,7 +84,7 @@
 (deftest test-g4-no-booking-purchase-or-diagnosis-field
   (let [forbidden ["booking" "reservation" "appointment" "purchase" "diagnosis" "prescription" "devicesale"]]
     (doseq [f (lex-files)]
-      (let [keys (set (map str/lower-case (property-keys (edn/read-string (slurp f)))))]
+      (let [keys (set (map str/lower (property-keys (edn/read-string (slurp f)))))]
         (doseq [word forbidden]
           (is (not (contains? keys word))
               (str "G4: " (.getName ^java.io.File f) " must not declare a '" word "' field")))))))
