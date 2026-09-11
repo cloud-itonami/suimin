@@ -7,7 +7,7 @@ synthesis (does NOT diagnose / treat / book / sell).
 |---|---|
 | Lexicons | ✅ 7 under `com.etzhayyim.suimin.*` (sourceWhitelist / evidenceRecord / treatmentSynthesis / conditionProfile / referralPathway / silenSuiminReview / disclaimerText) |
 | Manifest | ✅ canonical `manifest.edn` |
-| Tests | ✅ **19 tests / 101 assertions, green** — charter, Murakumo adapter, and repository contracts; `bb -cp src:test run_tests.kotoba` |
+| Tests | ✅ **19 tests / 101 assertions, green** — charter, Murakumo adapter, and repository contracts; `kbb -cp src:test run_tests.kotoba` |
 | Cells | ⛔ none yet (R1 — hazard/evidence ingest + synthesis cells, Murakumo-only) |
 | Methods | ⛔ no engine yet (R1 — evidence ingest + GRADE synthesis + disclaimer/referral gates) |
 
