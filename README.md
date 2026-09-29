@@ -37,7 +37,7 @@ mitate が個人症状を見立てて受診 routing し、suimin が治療法エ
 
 **R0 — scaffold-only.** 5 Pregel cells (all import-time RuntimeError gated) + 7 lexicons + master ADR.
 Evidence ingest / synthesis is not live. See
-[`CLAUDE.md`](./CLAUDE.md) for boundaries and the phasing gate (R0 → R3).
+[`AGENTS.md`](./AGENTS.md) for boundaries and the phasing gate (R0 → R3).
 
 ## Reliable sources (G1 whitelist)
 
